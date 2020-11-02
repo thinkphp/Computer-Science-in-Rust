@@ -1,1 +1,4 @@
-Euclid https://ideone.com/Yv1jcj
+# Basics Rust language.
+
+
+Greatest Common Divisor - Euclid's algorithm https://ideone.com/Yv1jcj
