@@ -1,9 +1,11 @@
 # RUST Language
-
+  
   RUST is a systems programming language that runs blazingly fast, prevents
   segfaults, and guarantees thread safety.
 
 ```
+$ rustc hello.rs
+
 fn main() {
     // Statements here are executed when the compiled binary is called.
     
