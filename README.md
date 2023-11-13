@@ -123,3 +123,6 @@ fn main() {
 } 
 ```
  https://ideone.com/Yv1jcj
+## References
+https://doc.rust-lang.org/stable/rust-by-example
+
