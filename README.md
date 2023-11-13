@@ -3,6 +3,12 @@
   RUST is a systems programming language that runs blazingly fast, prevents
   segfaults, and guarantees thread safety.
 
+### Featuring
+    * pattern matching
+    * efficient C bindings
+    * type inference
+    * minimal runtime  
+
 ```
 $ rustc hello.rs
 $ ./hello
@@ -26,9 +32,34 @@ fn main() {
 * The unit type (), whose only possible value is an empty tuple: ()
 * Despite the value of a unit type being a tuple, it is not considered a compound type because it does not contain multiple values.
 
-### Featuring
+## if/else Control Flow
+```
+fn main() {
+    let n = 5;
 
-    * pattern matching
-    * efficient C bindings
-    * type inference
-    * minimal runtime
+    if n < 0 {
+        print!("{} is negative", n);
+    } else if n > 0 {
+        print!("{} is positive", n);
+    } else {
+        print!("{} is zero", n);
+    }
+
+    let big_n =
+        if n < 10 && n > -10 {
+            println!(", and is a small number, increase ten-fold");
+
+            // This expression returns an `i32`.
+            10 * n
+        } else {
+            println!(", and is a big number, halve the number");
+
+            // This expression must return an `i32` as well.
+            n / 2
+            // TODO ^ Try suppressing this expression with a semicolon.
+        };
+    //   ^ Don't forget to put a semicolon here! All `let` bindings need it.
+
+    println!("{} -> {}", n, big_n);
+}
+```
