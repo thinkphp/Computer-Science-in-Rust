@@ -1,4 +1,3 @@
-# Basics Rust language.
+# Greatest Common Divisor
 
-
-Greatest Common Divisor - Euclid's algorithm https://ideone.com/Yv1jcj
+Euclid's algorithm https://ideone.com/Yv1jcj
