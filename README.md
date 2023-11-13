@@ -97,3 +97,4 @@ fn main() {
   println!("Euclid ({:?}, {:?}) -> {:?}", x, y, gcd(x,y));
 } 
 ```
+ https://ideone.com/Yv1jcj
