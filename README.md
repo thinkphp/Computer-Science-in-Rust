@@ -55,7 +55,7 @@ fn main() {
         n += 1;
     }
 }
-``'
+```
 
 ## if/else Control Flow
 ```
@@ -89,7 +89,8 @@ fn main() {
 }
 ```
 
-## Euclid's Algorithm https://ideone.com/Yv1jcj
+ ## Euclid's Algorithm https://ideone.com/Yv1jcj
+
 ```
 
 fn gcd(mut x: u64, mut y: u64) -> u64 {
@@ -122,7 +123,7 @@ fn main() {
   println!("Euclid ({:?}, {:?}) -> {:?}", x, y, gcd(x,y));
 }
 
-``
+```
 
 ## References
 
