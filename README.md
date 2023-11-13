@@ -120,11 +120,11 @@ fn main() {
   let y = get_input().trim().parse::<u64>().unwrap();
   
   println!("Euclid ({:?}, {:?}) -> {:?}", x, y, gcd(x,y));
-} 
-```
+}
+``
  https://ideone.com/Yv1jcj
 
 ## References
 
-https://doc.rust-lang.org/stable/rust-by-example
+* https://doc.rust-lang.org/stable/rust-by-example
 
