@@ -89,8 +89,7 @@ fn main() {
 }
 ```
 
-## Euclid's Algorithm
-
+## Euclid's Algorithm https://ideone.com/Yv1jcj
 ```
 
 fn gcd(mut x: u64, mut y: u64) -> u64 {
@@ -122,10 +121,9 @@ fn main() {
   
   println!("Euclid ({:?}, {:?}) -> {:?}", x, y, gcd(x,y));
 }
-```
- https://ideone.com/Yv1jcj
+
+``
 
 ## References
 
 * https://doc.rust-lang.org/stable/rust-by-example
-
