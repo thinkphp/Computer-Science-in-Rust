@@ -5,6 +5,8 @@
 
 ```
 $ rustc hello.rs
+$ ./hello
+Hello World!
 
 fn main() {
     // Statements here are executed when the compiled binary is called.
