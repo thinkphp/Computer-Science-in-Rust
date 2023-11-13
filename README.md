@@ -92,6 +92,7 @@ fn main() {
 ## Euclid's Algorithm
 
 ```
+
 fn gcd(mut x: u64, mut y: u64) -> u64 {
 
    assert!(x != 0 && y != 0);
@@ -121,7 +122,7 @@ fn main() {
   
   println!("Euclid ({:?}, {:?}) -> {:?}", x, y, gcd(x,y));
 }
-``
+```
  https://ideone.com/Yv1jcj
 
 ## References
