@@ -2,12 +2,6 @@
 
 Rust is a programming language that helps you write faster, more reliable software. High-level ergonomics and low-level control are often at odds with each other in programming language design; Rust stands to challenge that. Through balancing powerful technical capacity and a great developer experience, Rust gives you the option to control low-level details (such as memory usage) without all the hassle traditionally associated with such control.
 
-### Featuring
-    * pattern matching
-    * efficient C bindings
-    * type inference
-    * minimal runtime  
-
 ```
 extern crate rand;
 
@@ -41,6 +35,13 @@ fn main() {
     }
 }
 ```  
+
+### Featuring
+    * pattern matching
+    * efficient C bindings
+    * type inference
+    * minimal runtime  
+
 
 ```
 $ rustc hello.rs
