@@ -125,7 +125,7 @@ fn main() {
 
  ## Euclid's Algorithm https://ideone.com/Yv1jcj
 
-```
+```rust
 use std::io;
 use std::str::FromStr;
 use std::cmp::Ordering;
