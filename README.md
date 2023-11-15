@@ -126,37 +126,43 @@ fn main() {
  ## Euclid's Algorithm https://ideone.com/Yv1jcj
 
 ```
+use std::io;
+use std::str::FromStr;
+use std::cmp::Ordering;
 
-fn gcd(mut x: u64, mut y: u64) -> u64 {
+fn get_number(prompt_input: &str) -> u32 {
 
-   assert!(x != 0 && y != 0);
-
-   while y != 0 {
-
-   	     let t = x % y;
-   	     x = y;
-   	     y = t;
-   }   
-   x
-}
-
-fn get_input() -> String {
-
-   let mut buffer = String::new();
-
-   std::io::stdin().read_line(&mut buffer).expect("Failed");
-
-   buffer
+       println!("{}", prompt_input);
+       
+       let mut input = String::new();
+       
+       io::stdin().read_line(&mut input).expect("no input!");     
+       
+       u32::from_str(input.trim()).unwrap()      
 }
 
 fn main() {
-	
-  let x = get_input().trim().parse::<u64>().unwrap();
-  let y = get_input().trim().parse::<u64>().unwrap();
-  
-  println!("Euclid ({:?}, {:?}) -> {:?}", x, y, gcd(x,y));
+     
+       let a = get_number("Enter first number a = ");
+       
+       let b = get_number("Enter first number b = ");
+
+       println!("The Greatest Common Divisor of {} and {} is {}", a, b, euclid( a, b) );       
 }
 
+fn euclid(a: u32, b: u32) -> u32 {
+ 
+   assert!(a > 0 && b > 0);
+   
+   match a.cmp(&b) {
+   
+      Ordering::Equal => b,
+      
+      Ordering::Less => euclid(a,b-a),
+      
+      Ordering::Greater => euclid(a-b,b)
+   }   
+}
 ```
 
 ## References
