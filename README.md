@@ -392,6 +392,8 @@ fn euclid(a: u32, b: u32) -> u32 {
    }   
 }
 ```
+### practice
+Hundreds of companies, large and small, use Rust in production for a variety of tasks, including command line tools, web services, DevOps tooling, embedded devices, audio and video analysis and transcoding, cryptocurrencies, bioinformatics, search engines, Internet of Things applications, machine learning, and even major parts of the Firefox web browser.
 
 ## References
 * https://cs.lmu.edu/~ray/notes/introrust/
