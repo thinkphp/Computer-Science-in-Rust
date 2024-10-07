@@ -394,6 +394,6 @@ fn euclid(a: u32, b: u32) -> u32 {
 ```
 
 ## References
-
+* https://cs.lmu.edu/~ray/notes/introrust/
 * https://doc.rust-lang.org/stable/rust-by-example
 * https://web.mit.edu/rust-lang_v1.25/arch/amd64_ubuntu1404/share/doc/rust/html/#the-rust-bookshelf
